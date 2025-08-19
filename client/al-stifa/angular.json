@@ -58,7 +58,6 @@
                   "maximumError": "32kB"
                 }
               ],
-              
               "outputHashing": "all"
             },
             "development": {
@@ -76,7 +75,8 @@
               "buildTarget": "AL-Istifa:build:production"
             },
             "development": {
-              "buildTarget": "AL-Istifa:build:development"
+              "buildTarget": "AL-Istifa:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

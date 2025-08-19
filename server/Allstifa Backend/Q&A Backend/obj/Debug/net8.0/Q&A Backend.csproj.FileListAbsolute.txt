@@ -831,3 +831,4 @@ D:\MY WORK\Allstifa\server\Allstifa Backend\Q&A Backend\obj\Debug\net8.0\refint\
 D:\MY WORK\Allstifa\server\Allstifa Backend\Q&A Backend\obj\Debug\net8.0\Q&A Backend.pdb
 D:\MY WORK\Allstifa\server\Allstifa Backend\Q&A Backend\obj\Debug\net8.0\Q&A Backend.genruntimeconfig.cache
 D:\MY WORK\Allstifa\server\Allstifa Backend\Q&A Backend\obj\Debug\net8.0\ref\Q&A Backend.dll
+D:\MY WORK\Allstifa\server\Allstifa Backend\Q&A Backend\obj\Debug\net8.0\Q&A Backend.sourcelink.json

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Q&A Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+972778cd0e223ca3f05a49df70e0585c55b520df")]
 [assembly: System.Reflection.AssemblyProductAttribute("Q&A Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Q&A Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
