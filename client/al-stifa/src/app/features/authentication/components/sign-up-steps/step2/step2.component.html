@@ -1,0 +1,113 @@
+<div class="auth-container">
+  <div class="background-image profile-bg"></div>
+
+  <div class="auth-card">
+    <div class="logo-section">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="" />
+      </div>
+    </div>
+
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()" class="auth-form">
+      <!-- Avatar -->
+      <!-- <input type="text" [value]="userId" formControlName="userId" hidden> -->
+      <div class="profile-avatar">
+        <label class="avatar-label">Profile Photo</label>
+        <div
+          class="avatar-circle"
+          (click)="avatarInput.click()"
+          [class.has-image]="profileImagePreview"
+        >
+          <ng-container *ngIf="profileImagePreview; else defaultIcon">
+            <img [src]="profileImagePreview" alt="Profile" />
+          </ng-container>
+          <ng-template #defaultIcon>
+            <mat-icon class="default-avatar-icon">person</mat-icon>
+          </ng-template>
+          <div class="edit-overlay">
+            <mat-icon>edit</mat-icon>
+          </div>
+        </div>
+        <input
+          type="file"
+          #avatarInput
+          hidden
+          (change)="onProfileImageSelected($event)"
+          accept="image/*"
+        />
+      </div>
+
+      <!-- BIO -->
+      <div class="bio-section">
+        <label class="section-label"
+          >Bio <span class="optional">(max 100 words)</span></label
+        >
+        <mat-form-field appearance="outline" class="full-width">
+          <textarea
+            matInput
+            placeholder="Write something about yourself"
+            formControlName="bio"
+            rows="4"
+            maxlength="800"
+            class="bio-textarea"
+            (input)="updateWordCount()"
+          ></textarea>
+          <mat-error *ngIf="profileForm.get('bio')?.hasError('maxWordsExceeded')">
+            Bio must not exceed 100 words.
+          </mat-error>
+        </mat-form-field>
+        <div class="character-count">
+          {{ bioWordCount }} / 100 words
+        </div>
+      </div>
+
+      <!-- UPLOAD PROOF -->
+      <div class="upload-section">
+        <label class="upload-label">Upload Proof</label>
+        <div class="upload-container">
+          <input
+            type="file"
+            #fileInput
+            (change)="onFileSelected($event)"
+            accept="image/*,.pdf"
+            hidden
+          />
+          <div class="upload-field" (click)="fileInput.click()">
+            <span class="upload-text"
+              >{{ selectedFile ? selectedFile.name : 'Choose file...' }}</span
+            >
+            <button mat-stroked-button type="button" class="upload-btn">Upload</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"><span>OR</span></div>
+
+      <!-- SOCIAL LINK -->
+      <div class="social-section">
+        <label class="section-label">Social Link</label>
+        <mat-form-field appearance="outline" class="full-width">
+          <input
+            placeholder="https://your-profile.com"
+            matInput
+            formControlName="socialLink"
+            type="url"
+          />
+          <mat-error *ngIf="profileForm.get('socialLink')?.hasError('pattern')">
+            Please enter a valid URL.
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <button
+        mat-raised-button
+        type="submit"
+        class="done-btn"
+        [disabled]="wordCountExceeded"
+      >
+        Done
+      </button>
+    </form>
+  </div>
+</div>

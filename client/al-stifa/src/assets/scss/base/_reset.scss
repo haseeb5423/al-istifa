@@ -1,0 +1,21 @@
+@use 'abstracts/variables' as *;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  background-color: $background-cream;
+  color: $text-dark;
+  font-family: $font-main;
+  line-height: 1.6;
+}
+
+// img {
+//   max-width: 100%;
+//   display: block;
+// }

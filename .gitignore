@@ -1,0 +1,33 @@
+# =========================
+# GENERAL & OS
+# =========================
+.DS_Store
+*.log
+Thumbs.db
+.vscode/
+
+
+# =========================
+# FRONTEND (Angular)
+# =========================
+# Path is relative to the root folder
+client/al-stifa/node_modules/
+client/al-stifa/dist/
+client/al-stifa/.angular/
+client/al-stifa/.env.local
+
+
+# =========================
+# BACKEND (.NET)
+# =========================
+# Path is relative to the root folder
+server/Allstifa Backend/bin/
+server/Allstifa Backend/obj/
+server/Allstifa Backend/.vs/
+
+# User-specific files
+*.suo
+*.user
+
+# Secrets and local configuration
+appsettings.Development.json

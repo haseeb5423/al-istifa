@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\65d7818c-79eb-4744-911a-0375ba719514.png",
+      "PackagePath": "staticwebassets\\uploads\\ProfileImages\\65d7818c-79eb-4744-911a-0375ba719514.png"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\77857c79-3f48-429a-8a9e-a5d2acb63ca7.png",
+      "PackagePath": "staticwebassets\\uploads\\ProfileImages\\77857c79-3f48-429a-8a9e-a5d2acb63ca7.png"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\8702c645-16a6-435e-8e98-99e2cc97956f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ProfileImages\\8702c645-16a6-435e-8e98-99e2cc97956f.jpg"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\923c5ec2-c183-4d93-9610-b3c1fc81834e.png",
+      "PackagePath": "staticwebassets\\uploads\\ProfileImages\\923c5ec2-c183-4d93-9610-b3c1fc81834e.png"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\cd9ead32-1458-4502-a7be-0fc939292dd4.png",
+      "PackagePath": "staticwebassets\\uploads\\ProfileImages\\cd9ead32-1458-4502-a7be-0fc939292dd4.png"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\e507d9e5-dc35-4831-8517-11f877788e7f.png",
+      "PackagePath": "staticwebassets\\uploads\\ProfileImages\\e507d9e5-dc35-4831-8517-11f877788e7f.png"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\1c534e9c-eef8-4174-9b87-774511188152.pdf",
+      "PackagePath": "staticwebassets\\uploads\\ProofFiles\\1c534e9c-eef8-4174-9b87-774511188152.pdf"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\3eb7594e-438b-43c0-97ad-cd15cb0721e2.png",
+      "PackagePath": "staticwebassets\\uploads\\ProofFiles\\3eb7594e-438b-43c0-97ad-cd15cb0721e2.png"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\70929d3e-107e-4305-818f-196a7f35657c.pdf",
+      "PackagePath": "staticwebassets\\uploads\\ProofFiles\\70929d3e-107e-4305-818f-196a7f35657c.pdf"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\9159114e-ec0d-4d4b-b088-f9bbe8a95e5e.pdf",
+      "PackagePath": "staticwebassets\\uploads\\ProofFiles\\9159114e-ec0d-4d4b-b088-f9bbe8a95e5e.pdf"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\acca8e33-f54a-4d72-a3e9-a1b65bd7d0d8.pdf",
+      "PackagePath": "staticwebassets\\uploads\\ProofFiles\\acca8e33-f54a-4d72-a3e9-a1b65bd7d0d8.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Q&A Backend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Q&A Backend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Q&A Backend.props",
+      "PackagePath": "build\\Q&A Backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Q&A Backend.props",
+      "PackagePath": "buildMultiTargeting\\Q&A Backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Q&A Backend.props",
+      "PackagePath": "buildTransitive\\Q&A Backend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

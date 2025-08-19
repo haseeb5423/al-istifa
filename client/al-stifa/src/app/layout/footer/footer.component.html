@@ -1,0 +1,23 @@
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-main">
+      <div class="footer-logo">
+        <img src="assets/images/logo.png" alt="Logo" />
+      </div>
+      <div class="footer-taglines">
+        <div class="main-tagline">Knowledge. Transparency. Unity.</div>
+        <div class="sub-taglines">
+          <p>Access diverse Islamic opinions</p>
+          <p>Respectful scholarly dialogue</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-links">
+      <a *ngFor="let link of footerLinks" [routerLink]="link.url">{{ link.name }}</a>
+    </div>
+    <div class="footer-bottom">
+      <p>© {{ currentYear }} Fatwa Vault. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,1155 @@
+{
+  "Version": 1,
+  "Hash": "s3nWoAxnoGW6RK3GfswDjEonWJWAoaCz623FC42XG+Q=",
+  "Source": "Q&A Backend",
+  "BasePath": "_content/Q&A Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Q&A Backend\\wwwroot",
+      "Source": "Q&A Backend",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\65d7818c-79eb-4744-911a-0375ba719514.png",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/ProfileImages/65d7818c-79eb-4744-911a-0375ba719514#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z3y9yavkvm",
+      "Integrity": "ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ProfileImages\\65d7818c-79eb-4744-911a-0375ba719514.png"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\77857c79-3f48-429a-8a9e-a5d2acb63ca7.png",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/ProfileImages/77857c79-3f48-429a-8a9e-a5d2acb63ca7#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z3y9yavkvm",
+      "Integrity": "ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ProfileImages\\77857c79-3f48-429a-8a9e-a5d2acb63ca7.png"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\8702c645-16a6-435e-8e98-99e2cc97956f.jpg",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/ProfileImages/8702c645-16a6-435e-8e98-99e2cc97956f#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mizevf7jr4",
+      "Integrity": "TvbXmcLZZjtg/P+VSX+HMVBqBhsRrzeI3TdrFYkqwg8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ProfileImages\\8702c645-16a6-435e-8e98-99e2cc97956f.jpg"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\923c5ec2-c183-4d93-9610-b3c1fc81834e.png",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/ProfileImages/923c5ec2-c183-4d93-9610-b3c1fc81834e#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eiih6xp6iw",
+      "Integrity": "9nEVl3n/go50OipgTy7Kgp4yA+xdGPTY9dV2S2FFhv0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ProfileImages\\923c5ec2-c183-4d93-9610-b3c1fc81834e.png"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\cd9ead32-1458-4502-a7be-0fc939292dd4.png",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/ProfileImages/cd9ead32-1458-4502-a7be-0fc939292dd4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7qh3m9arsv",
+      "Integrity": "gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ProfileImages\\cd9ead32-1458-4502-a7be-0fc939292dd4.png"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\e507d9e5-dc35-4831-8517-11f877788e7f.png",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/ProfileImages/e507d9e5-dc35-4831-8517-11f877788e7f#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z3y9yavkvm",
+      "Integrity": "ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ProfileImages\\e507d9e5-dc35-4831-8517-11f877788e7f.png"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\1c534e9c-eef8-4174-9b87-774511188152.pdf",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/ProofFiles/1c534e9c-eef8-4174-9b87-774511188152#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p6pixpllhe",
+      "Integrity": "AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ProofFiles\\1c534e9c-eef8-4174-9b87-774511188152.pdf"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\3eb7594e-438b-43c0-97ad-cd15cb0721e2.png",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/ProofFiles/3eb7594e-438b-43c0-97ad-cd15cb0721e2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bchqxbfz7b",
+      "Integrity": "S1e9FMCwu6FPpoxlpsfyXkaWE7SyxGIMY3egjXrpaJ4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ProofFiles\\3eb7594e-438b-43c0-97ad-cd15cb0721e2.png"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\70929d3e-107e-4305-818f-196a7f35657c.pdf",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/ProofFiles/70929d3e-107e-4305-818f-196a7f35657c#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p6pixpllhe",
+      "Integrity": "AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ProofFiles\\70929d3e-107e-4305-818f-196a7f35657c.pdf"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\9159114e-ec0d-4d4b-b088-f9bbe8a95e5e.pdf",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/ProofFiles/9159114e-ec0d-4d4b-b088-f9bbe8a95e5e#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p6pixpllhe",
+      "Integrity": "AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ProofFiles\\9159114e-ec0d-4d4b-b088-f9bbe8a95e5e.pdf"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\acca8e33-f54a-4d72-a3e9-a1b65bd7d0d8.pdf",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/ProofFiles/acca8e33-f54a-4d72-a3e9-a1b65bd7d0d8#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p6pixpllhe",
+      "Integrity": "AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ProofFiles\\acca8e33-f54a-4d72-a3e9-a1b65bd7d0d8.pdf"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/ProfileImages/65d7818c-79eb-4744-911a-0375ba719514.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\65d7818c-79eb-4744-911a-0375ba719514.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104425"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 09:37:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/65d7818c-79eb-4744-911a-0375ba719514.z3y9yavkvm.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\65d7818c-79eb-4744-911a-0375ba719514.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104425"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 09:37:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3y9yavkvm"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ProfileImages/65d7818c-79eb-4744-911a-0375ba719514.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/77857c79-3f48-429a-8a9e-a5d2acb63ca7.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\77857c79-3f48-429a-8a9e-a5d2acb63ca7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104425"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 05:30:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/77857c79-3f48-429a-8a9e-a5d2acb63ca7.z3y9yavkvm.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\77857c79-3f48-429a-8a9e-a5d2acb63ca7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104425"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 05:30:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3y9yavkvm"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ProfileImages/77857c79-3f48-429a-8a9e-a5d2acb63ca7.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/8702c645-16a6-435e-8e98-99e2cc97956f.jpg",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\8702c645-16a6-435e-8e98-99e2cc97956f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TvbXmcLZZjtg/P+VSX+HMVBqBhsRrzeI3TdrFYkqwg8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 07:06:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TvbXmcLZZjtg/P+VSX+HMVBqBhsRrzeI3TdrFYkqwg8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/8702c645-16a6-435e-8e98-99e2cc97956f.mizevf7jr4.jpg",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\8702c645-16a6-435e-8e98-99e2cc97956f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TvbXmcLZZjtg/P+VSX+HMVBqBhsRrzeI3TdrFYkqwg8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 07:06:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mizevf7jr4"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ProfileImages/8702c645-16a6-435e-8e98-99e2cc97956f.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TvbXmcLZZjtg/P+VSX+HMVBqBhsRrzeI3TdrFYkqwg8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/923c5ec2-c183-4d93-9610-b3c1fc81834e.eiih6xp6iw.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\923c5ec2-c183-4d93-9610-b3c1fc81834e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46486"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9nEVl3n/go50OipgTy7Kgp4yA+xdGPTY9dV2S2FFhv0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 13:13:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eiih6xp6iw"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ProfileImages/923c5ec2-c183-4d93-9610-b3c1fc81834e.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9nEVl3n/go50OipgTy7Kgp4yA+xdGPTY9dV2S2FFhv0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/923c5ec2-c183-4d93-9610-b3c1fc81834e.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\923c5ec2-c183-4d93-9610-b3c1fc81834e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46486"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9nEVl3n/go50OipgTy7Kgp4yA+xdGPTY9dV2S2FFhv0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 13:13:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9nEVl3n/go50OipgTy7Kgp4yA+xdGPTY9dV2S2FFhv0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/cd9ead32-1458-4502-a7be-0fc939292dd4.7qh3m9arsv.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\cd9ead32-1458-4502-a7be-0fc939292dd4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1726933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 05:35:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7qh3m9arsv"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ProfileImages/cd9ead32-1458-4502-a7be-0fc939292dd4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/cd9ead32-1458-4502-a7be-0fc939292dd4.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\cd9ead32-1458-4502-a7be-0fc939292dd4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1726933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 05:35:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/e507d9e5-dc35-4831-8517-11f877788e7f.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\e507d9e5-dc35-4831-8517-11f877788e7f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104425"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 05:31:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/e507d9e5-dc35-4831-8517-11f877788e7f.z3y9yavkvm.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\e507d9e5-dc35-4831-8517-11f877788e7f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104425"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 05:31:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3y9yavkvm"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ProfileImages/e507d9e5-dc35-4831-8517-11f877788e7f.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProofFiles/1c534e9c-eef8-4174-9b87-774511188152.p6pixpllhe.pdf",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\1c534e9c-eef8-4174-9b87-774511188152.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1734224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 05:35:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p6pixpllhe"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ProofFiles/1c534e9c-eef8-4174-9b87-774511188152.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProofFiles/1c534e9c-eef8-4174-9b87-774511188152.pdf",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\1c534e9c-eef8-4174-9b87-774511188152.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1734224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 05:35:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProofFiles/3eb7594e-438b-43c0-97ad-cd15cb0721e2.bchqxbfz7b.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\3eb7594e-438b-43c0-97ad-cd15cb0721e2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70843"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S1e9FMCwu6FPpoxlpsfyXkaWE7SyxGIMY3egjXrpaJ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 13:13:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bchqxbfz7b"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ProofFiles/3eb7594e-438b-43c0-97ad-cd15cb0721e2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S1e9FMCwu6FPpoxlpsfyXkaWE7SyxGIMY3egjXrpaJ4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProofFiles/3eb7594e-438b-43c0-97ad-cd15cb0721e2.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\3eb7594e-438b-43c0-97ad-cd15cb0721e2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70843"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S1e9FMCwu6FPpoxlpsfyXkaWE7SyxGIMY3egjXrpaJ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 13:13:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S1e9FMCwu6FPpoxlpsfyXkaWE7SyxGIMY3egjXrpaJ4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProofFiles/70929d3e-107e-4305-818f-196a7f35657c.p6pixpllhe.pdf",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\70929d3e-107e-4305-818f-196a7f35657c.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1734224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 05:30:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p6pixpllhe"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ProofFiles/70929d3e-107e-4305-818f-196a7f35657c.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProofFiles/70929d3e-107e-4305-818f-196a7f35657c.pdf",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\70929d3e-107e-4305-818f-196a7f35657c.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1734224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 05:30:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProofFiles/9159114e-ec0d-4d4b-b088-f9bbe8a95e5e.p6pixpllhe.pdf",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\9159114e-ec0d-4d4b-b088-f9bbe8a95e5e.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1734224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 05:31:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p6pixpllhe"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ProofFiles/9159114e-ec0d-4d4b-b088-f9bbe8a95e5e.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProofFiles/9159114e-ec0d-4d4b-b088-f9bbe8a95e5e.pdf",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\9159114e-ec0d-4d4b-b088-f9bbe8a95e5e.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1734224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 05:31:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProofFiles/acca8e33-f54a-4d72-a3e9-a1b65bd7d0d8.p6pixpllhe.pdf",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\acca8e33-f54a-4d72-a3e9-a1b65bd7d0d8.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1734224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 09:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p6pixpllhe"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ProofFiles/acca8e33-f54a-4d72-a3e9-a1b65bd7d0d8.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProofFiles/acca8e33-f54a-4d72-a3e9-a1b65bd7d0d8.pdf",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\acca8e33-f54a-4d72-a3e9-a1b65bd7d0d8.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1734224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 09:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY="
+        }
+      ]
+    }
+  ]
+}

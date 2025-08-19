@@ -1,0 +1,58 @@
+<section class="hero-section" >
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">Ask, Learn, and Decide</h1>
+      <p class="hero-subtitle">
+        Submit your question and explore authentic, referenced answers from scholars of different Islamic schools of thought.
+      </p>
+      <div class="hero-actions">
+        <button class="primary-btn" (click)="onAskQuestion()">Ask a Question</button>
+        <button class="secondary-btn" (click)="onRegister()">Join Now</button>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="islamic-pattern">
+        <img src="assets/images/hero-image.png" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="philosophy-section" >
+  <div class="section-content">
+    <div class="philosophy-card">
+      <mat-icon class="philosophy-icon">public</mat-icon>
+      <p class="philosophy-statement">
+        We empower users to explore multiple views and reach conclusions based on reasoning, references, and trust.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="how-it-works-section" >
+  <div class="section-content">
+    <h2 class="section-title">How It Works</h2>
+    <div class="steps-container">
+      <div class="step-card" *ngFor="let step of howItWorksSteps; let i = index">
+        <div class="step-number">{{ i + 1 }}</div>
+        <div class="step-icon">
+          <mat-icon>{{ step.icon }}</mat-icon>
+        </div>
+        <h3 class="step-title">{{ step.title }}</h3>
+        <p class="step-description">{{ step.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust-section" >
+  <div class="section-content">
+    <h2 class="section-title">Why Trust Us</h2>
+    <div class="trust-grid">
+      <div class="trust-item" *ngFor="let feature of trustFeatures">
+        <mat-icon class="trust-icon">check_circle</mat-icon>
+        <div class="trust-text">{{ feature }}</div>
+      </div>
+    </div>
+  </div>
+</section>

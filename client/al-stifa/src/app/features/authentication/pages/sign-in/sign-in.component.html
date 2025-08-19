@@ -1,0 +1,63 @@
+<div class="auth-container">
+  <div class="background-image"></div>
+  
+  <div class="auth-card">
+    <div class="logo-section">
+      <div class="logo">
+        <img class="logo-img" src="assets/images/logo.png" alt="">
+      </div>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="auth-form">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email Address</mat-label>
+        <input matInput formControlName="email" type="email" required placeholder="Enter your email address">
+        <mat-error *ngIf="loginForm.get('email')?.hasError('required')">
+          Email is required
+        </mat-error>
+        <mat-error *ngIf="loginForm.get('email')?.hasError('email')">
+          Please enter a valid email
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" [type]="hidePassword ? 'password' : 'text'" required placeholder="Enter your password">
+        <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" type="button">
+          <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
+          Password is required
+        </mat-error>
+        <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')">
+          Password must be at least 6 characters
+        </mat-error>
+      </mat-form-field>
+
+      <div class="form-options">
+        <mat-checkbox formControlName="rememberMe" class="remember-me">
+          Remember Me
+        </mat-checkbox> 
+        <a href="#" class="forgot-password">Forgot Password</a>
+      </div>
+
+      <button mat-raised-button type="submit" class="signin-btn" [disabled]="!loginForm.valid">
+        SIGN IN
+      </button>
+
+      <div class="divider">
+        <span>OR</span>
+      </div>
+
+      <button mat-stroked-button type="button" class="google-btn" (click)="onGoogleSignIn()">
+        <mat-icon>account_circle</mat-icon>
+        SIGN IN WITH GOOGLE
+      </button>
+
+      <div class="signup-link">
+        <span>Don't have an account </span>
+        <a (click)="navigateToRegister()" class="signup-link-text">SIGN UP</a>
+      </div>
+    </form>
+  </div>
+</div>

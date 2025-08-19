@@ -1,0 +1,65 @@
+[
+  {
+    "ContainingType": "Q_A_Backend.Controllers.AuthController",
+    "Method": "RegisterStep2Async",
+    "RelativePath": "api/Auth/register-step2",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Bio",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProfileImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProofFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q_A_Backend.Controllers.AuthController",
+    "Method": "RegisterStep1Async",
+    "RelativePath": "api/Auth/register/step1",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerStep1Dto",
+        "Type": "Q_A_Backend.DTOs.RegisterStep1Dto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q_A_Backend.Controllers.AuthController",
+    "Method": "TestGetUser",
+    "RelativePath": "api/Auth/test-user/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
