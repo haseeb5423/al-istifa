@@ -40,7 +40,7 @@ import { ToastService } from '@shared/services/toastr.service';
       this.profileForm = this.fb.group({
         
         bio: ['', [Validators.maxLength(500)]],
-        socialLink: ['', [Validators.pattern(/^https?:\/\/.+/)]],
+        socialMediaLink: ['', [Validators.pattern(/^https?:\/\/.+/)]],
       });
       
       
@@ -80,7 +80,7 @@ import { ToastService } from '@shared/services/toastr.service';
       const formData = new FormData();
       formData.append('userId', this.userId)
       formData.append('bio', this.profileForm.get('bio')?.value),
-      formData.append('socialLink', this.profileForm.get('socialLink')?.value)
+      formData.append('socialMediaLink', this.profileForm.get('socialMediaLink')?.value)
       
       if(this.selectedFile){
         formData.append('proofFile', this.selectedFile)
@@ -95,6 +95,7 @@ import { ToastService } from '@shared/services/toastr.service';
     onSubmit(): void {
       if (this.profileForm.valid) {
         const formData = this.formDataFormation();
+        console.log('Form Data:', formData);
         this.authSvc.registerStep2(formData).subscribe({
           next:(response) =>{
             this.toastr.success('Profile Created Successfully!')

@@ -1,5 +1,6 @@
 ﻿
 using Q_A_Backend.DTOs;
+using Q_A_Backend.Models;
 
 namespace Q_A_Backend.Services.Interfaces
 {
@@ -8,6 +9,7 @@ namespace Q_A_Backend.Services.Interfaces
         public bool Success { get; set; }
         public string? Token { get; set; }
         public string? Message { get; set; }
+        public User? User { get; set; } 
     }
 
     public interface IAuthService
