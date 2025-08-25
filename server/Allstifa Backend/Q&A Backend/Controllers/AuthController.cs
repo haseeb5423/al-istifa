@@ -46,7 +46,7 @@ namespace Q_A_Backend.Controllers
             }
         }
         [HttpPost("register/step2")]
-        public async Task<IActionResult> RegisterStep2Async([FromForm] RegisterStep2Dto dto)
+        public async Task<IActionResult> RegisterStep2Async(RegisterStep2Dto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -70,7 +70,7 @@ namespace Q_A_Backend.Controllers
             var loginResult = await _authService.LoginAsync(dto);
             if (loginResult.Success)
             {
-                return Ok(new { Token = loginResult.Token, user = loginResult.User, Message = "Login successful." });
+                return Ok(new { Token = loginResult.Token });
             }
             else if (loginResult.Success == false && loginResult.Message == "User not found.")
             {

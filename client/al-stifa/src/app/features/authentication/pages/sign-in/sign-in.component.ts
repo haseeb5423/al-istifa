@@ -5,7 +5,6 @@ import {  MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { Router } from '@angular/router';
 import { AuthService } from '@features/authentication/services/auth.service';
 import { ToastrService } from 'ngx-toastr';
 
@@ -22,8 +21,8 @@ export class SignInComponent {
   constructor(
     private fb: FormBuilder,
     private authSvc: AuthService,
-    private toastr :ToastrService,
-    private router: Router
+    private toastr :ToastrService
+    // private router: Router
   ) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
@@ -40,7 +39,6 @@ export class SignInComponent {
         next: (response) => {
           console.log('Login successful', response);
           this.toastr.success('Login successful');
-          this.router.navigate(['/profile']);
         },
         error: (response) => {
           this.toastr.error('Login failed', response.error );

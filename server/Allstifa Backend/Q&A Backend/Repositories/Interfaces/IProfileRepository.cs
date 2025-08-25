@@ -1,8 +1,6 @@
 namespace Q_A_Backend.Repositories.Interfaces
 {
     using Q_A_Backend.DTOs;
-    using Q_A_Backend.Models;
-
     using System;
     using System.Threading.Tasks;
 
@@ -10,7 +8,7 @@ namespace Q_A_Backend.Repositories.Interfaces
     {
         Task<ProfileDto> GetProfileByIdAsync(Guid userId);
 
-        Task<User> UpdateProfileAsync(
+        Task<bool> UpdateProfileAsync(
             Guid userId, 
             ProfileUpdateDto profileUpdateDto);
     }

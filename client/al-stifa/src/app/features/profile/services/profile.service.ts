@@ -13,7 +13,4 @@ export class ProfileService {
   getProfile(id: string) {
     return this.http.get(`${this.baseUrl}/profile/${id}`);
   }
-  updateProfile(id: string, formData: FormData) {
-    return this.http.patch(`${this.baseUrl}/profile/${id}`, formData);
-  }
 }

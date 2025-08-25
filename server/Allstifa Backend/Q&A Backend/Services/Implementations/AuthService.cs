@@ -83,7 +83,7 @@ namespace Q_A_Backend.Services.Implementations
                 return new LoginResult { Success = false, Message = "Token generation failed." };
             }
 
-            return new LoginResult { Success = true, Token = token, User = user };
+            return new LoginResult { Success = true, Token = token };
         }
     }
 }

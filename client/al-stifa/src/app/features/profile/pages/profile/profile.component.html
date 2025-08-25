@@ -1,96 +1,205 @@
-<div class="main-container" *ngIf="profileData">
-  <form class="profile-container" [formGroup]="profileForm">
-    <div class="header">
-      <div class="avatar">
-        <img
-          [src]="imagePreview && isEditing ? imagePreview : profileData.profileImagePath || 'assets/images/default-avtar.jpg'"
-          alt="avatar"
-        />
-        <div class="avtar-overlay" [style.display]="isEditing ? 'block' : 'none'">
-          <input
-            title="profile-image"
-            type="file"
-            class="profile-image"
-            id="profile-image" 
-            accept=".png,.jpg,.jpeg"
-            (change)="onAvatarSelected($event)" 
-          />
+<div class="profile-container">
+  <!-- Header Section -->
+  <div class="profile-header">
+    <div class="background-pattern"></div>
+    <div class="header-content">
+      <div class="profile-avatar-section">
+        <div class="avatar-container">
+          <img 
+          alt="Avatar"
+            [src]="profile.profileImagePath"
+            [alt]="profile.name"
+            class="profile-avatar">
+          
+          <div class="verification-badge" *ngIf="profile.isVerified">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z"/>
+            </svg>
+          </div>
+          
+          <div class="edit-overlay" *ngIf="isEditing">
+            <input type="file" 
+                   (change)="onFileSelected($event)"
+                   accept="image/*"
+                   id="avatar-upload"
+                   class="hidden-input">
+            <label for="avatar-upload" class="upload-button">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z"/>
+              </svg>
+              Change Photo
+            </label>
+          </div>
         </div>
       </div>
-      <div class="info">
-        <ng-container *ngIf="isEditing; else viewMode">
-          <input type="text" formControlName="name" class="edit-input" placeholder="Name" />
-          <input type="email" formControlName="email" class="edit-input" placeholder="Email" />
-          <p>{{ profileData.role }}</p>
-        </ng-container>
-        <ng-template #viewMode>
-          <p>{{ profileData.name }}</p>
-          <p>{{ profileData.email }}</p>
-          <p>{{ profileData.role }}</p>
-        </ng-template>
+      
+      <div class="profile-title-section">
+        <h1 class="profile-name">{{ profile.name }}</h1>
+        <div class="profile-role" [class]="getRoleColor(profile.role)">
+          {{ profile.role }}
+        </div>
+        <div class="profile-email">{{ profile.email }}</div>
+        <div class="joined-date">
+          Member since {{ formatDate(profile.createdAt) }}
+        </div>
       </div>
-      <div class="profile-actions">
-        <button
-          type="button"
-          [class.editingMode]="isEditing"
-          title="Edit Profile"
-          (click)="isEditing ? saveChanges() : onEditing()"
-        >
+      
+      <div class="header-actions">
+        <button 
+        type="button"
+          class="edit-btn"
+          [class.save-btn]="isEditing"
+          (click)="isEditing ? saveProfile() : toggleEdit()">
+          <svg *ngIf="!isEditing" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+          </svg>
+          <svg *ngIf="isEditing" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+          </svg>
           {{ isEditing ? 'Save Changes' : 'Edit Profile' }}
         </button>
-        <button *ngIf="isEditing" type="button" class="cancel-btn" title="Cancel Editing" (click)="onCancelEdit()">
+        
+        <button 
+          type ="button"
+          *ngIf="isEditing" 
+          class="cancel-btn"
+          (click)="toggleEdit()">
           Cancel
         </button>
       </div>
     </div>
-    <div class="details">
-      <div class="bio">
-        <span class="section-title bio-title">Biography</span>
-        <textarea
-          formControlName="bio"
-          placeholder="Write about yourself, your expertise in Islamic studies, and your academic background..."
-          rows="6"
-        ></textarea>
-        <span class="section-title maslak-title">Islamic School of Thought</span>
-        <div class="select-wrapper">
-          <select title="maslaks" name="maslaks" id="maslaks" formControlName="maslakId">
-            <option *ngFor="let maslak of maslaks" [value]="maslak.maslakId">
-              {{ maslak.name }}
-            </option>
-          </select>
+  </div>
+
+  <!-- Profile Content -->
+  <div class="profile-content">
+    <div class="content-grid">
+      <!-- Personal Information Card -->
+      <div class="info-card">
+        <div class="card-header">
+          <h3>Personal Information</h3>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="info-row">
+            <label>Full Name</label>
+            <div *ngIf="!isEditing" class="info-value">{{ profile.name }}</div>
+            <input
+            title="Name" 
+              *ngIf="isEditing" 
+              type="text" 
+              [(ngModel)]="editableProfile.name"
+              class="edit-input">
+          </div>
+          
+          <div class="info-row">
+            <label>Email Address</label>
+            <div *ngIf="!isEditing" class="info-value">{{ profile.email }}</div>
+            <input 
+            title="Email"
+              *ngIf="isEditing" 
+              type="email" 
+              [(ngModel)]="editableProfile.email"
+              class="edit-input">
+          </div>
+          
+          <div class="info-row">
+            <label>Role</label>
+            <div class="info-value">
+              <span>{{ profile.role }}</span>
+            </div>
+          </div>
+          
+          <div class="info-row">
+            <label>Maslak (School of Thought)</label>
+            <div *ngIf="!isEditing" class="info-value">{{profile.maslakId}}</div>
+            <select 
+            title="Maslak"
+              *ngIf="isEditing" 
+              [(ngModel)]="editableProfile.maslakId"
+              class="edit-select">
+              <option [value]="undefined">Select Maslak</option>
+              <option *ngFor="let maslak of maslaks" [value]="maslak.maslakId">
+                {{ maslak.name }}
+              </option>
+            </select>
+          </div>
         </div>
       </div>
-      <div class="proofs">
-        <span class="section-title certificate-title">Upload Credentials</span>
-        <div class="file-input-wrapper">
-          <div class="file-input">
-            <input
-              (change)="onProofFileSelected($event)"
-              title="certificate"
-              type="file"
-              class="certificate"
-              id="certificate"
-              accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
-            />
-            <div class="file-input-display">
-              <div class="file-icon">📋</div>
-              <div class="file-text">
-                <div class="main-text">Upload Certificate</div>
-                <div class="sub-text">PDF, DOC, or Image files</div>
-              </div>
+
+      <!-- Biography Card -->
+      <div class="info-card bio-card">
+        <div class="card-header">
+          <h3>Biography</h3>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V8l-8-6zm4 18H6V4h7v5h5v11z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-content">
+          <div *ngIf="!isEditing" class="bio-text">
+            {{ profile.bio || 'No biography provided yet.' }}
+          </div>
+          <textarea 
+            *ngIf="isEditing"
+            [(ngModel)]="editableProfile.bio"
+            placeholder="Tell us about yourself..."
+            class="bio-textarea"></textarea>
+        </div>
+      </div>
+
+      <!-- Verification & Links Card -->
+      <div class="info-card">
+        <div class="card-header">
+          <h3>Verification & Social</h3>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="verification-status">
+            <div class="status-indicator" [class.verified]="profile.isVerified">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path *ngIf="profile.isVerified" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                <path *ngIf="!profile.isVerified" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              <span>{{ profile.isVerified ? 'Verified Account' : 'Unverified Account' }}</span>
+            </div>
+          </div>
+          
+          <div class="info-row" *ngIf="profile.socialMediaLink">
+            <label>Social Media</label>
+            <div *ngIf="!isEditing" class="info-value">
+              <a [href]="profile.socialMediaLink" target="_blank" class="social-link">
+                {{ profile.socialMediaLink }}
+              </a>
+            </div>
+            <input 
+              *ngIf="isEditing" 
+              type="url" 
+              [(ngModel)]="editableProfile.socialMediaLink"
+              placeholder="https://twitter.com/username"
+              class="edit-input">
+          </div>
+          
+          <div class="info-row" *ngIf="profile.proofFilePath">
+            <label>Verification Document</label>
+            <div class="info-value">
+              <a [href]="profile.proofFilePath" target="_blank" class="document-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V8l-8-6zm4 18H6V4h7v5h5v11z"/>
+                </svg>
+                View Certificate
+              </a>
             </div>
           </div>
         </div>
-        <span class="section-title social-title">Social Media Profile</span>
-        <div class="social-input-wrapper">
-          <input
-            title="social-links"
-            type="text"
-            id="social-links"
-            formControlName="socialMediaLink"
-          />
-        </div>
       </div>
     </div>
-  </form>
-</div>  
+  </div>

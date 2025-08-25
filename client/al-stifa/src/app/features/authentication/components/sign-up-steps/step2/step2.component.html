@@ -84,14 +84,14 @@
       <!-- Divider -->
       <div class="divider"><span>OR</span></div>
 
-    <!-- SOCIAL LINK -->
+      <!-- SOCIAL LINK -->
       <div class="social-section">
         <label class="section-label">Social Link</label>
         <mat-form-field appearance="outline" class="full-width">
           <input
             placeholder="https://your-profile.com"
             matInput
-            formControlName="socialMediaLink"
+            formControlName="socialLink"
             type="url"
           />
           <mat-error *ngIf="profileForm.get('socialLink')?.hasError('pattern')">
