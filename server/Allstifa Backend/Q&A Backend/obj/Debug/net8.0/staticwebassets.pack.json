@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets\\uploads\\ProfileImages\\a3f3d9fe-c520-47d1-92a2-e58943854673.png"
     },
     {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\a608746e-5c60-4eed-bfe9-258ecf9b0d1f.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\ProfileImages\\a608746e-5c60-4eed-bfe9-258ecf9b0d1f.jpeg"
+    },
+    {
       "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\a8c345de-368c-454f-8986-0f3a50a3bafc.png",
       "PackagePath": "staticwebassets\\uploads\\ProfileImages\\a8c345de-368c-454f-8986-0f3a50a3bafc.png"
     },
@@ -131,6 +135,18 @@
     {
       "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\ec053ea6-db91-408c-96d2-1d59c6d6534b.pdf",
       "PackagePath": "staticwebassets\\uploads\\ProofFiles\\ec053ea6-db91-408c-96d2-1d59c6d6534b.pdf"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\81688ce1-47ae-4f4c-85ef-49f8e66fb109.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\81688ce1-47ae-4f4c-85ef-49f8e66fb109.png"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\f5ddb65d-5db3-46a5-8998-5ff4e896049f.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\f5ddb65d-5db3-46a5-8998-5ff4e896049f.png"
+    },
+    {
+      "Id": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\proofs\\7d32fbb3-4a7c-4e5d-8354-fd050d0dbdd6.png",
+      "PackagePath": "staticwebassets\\uploads\\proofs\\7d32fbb3-4a7c-4e5d-8354-fd050d0dbdd6.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Q&A Backend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aBgiKemHmjV8iewMoOZElq3hemk6iTRE8h1Lcl5EyBU=",
+  "Hash": "RkYWQEf4h2KzsJMrdlBR4dbZib+d8KgMRN1dxfwsv/8=",
   "Source": "Q&A Backend",
   "BasePath": "_content/Q&A Backend",
   "Mode": "Default",
@@ -332,6 +332,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\ProfileImages\\a3f3d9fe-c520-47d1-92a2-e58943854673.png"
     },
     {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\a608746e-5c60-4eed-bfe9-258ecf9b0d1f.jpeg",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/ProfileImages/a608746e-5c60-4eed-bfe9-258ecf9b0d1f#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zt65nr1oqo",
+      "Integrity": "KXuQN8CR50fIPkx0Qc/Db8sEul7a9wwg8AuK8k2yZLg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ProfileImages\\a608746e-5c60-4eed-bfe9-258ecf9b0d1f.jpeg"
+    },
+    {
       "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\a8c345de-368c-454f-8986-0f3a50a3bafc.png",
       "SourceId": "Q&A Backend",
       "SourceType": "Discovered",
@@ -435,6 +456,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\ProfileImages\\edca723a-2649-4a9c-a3d3-940c601550ac.jpeg"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\81688ce1-47ae-4f4c-85ef-49f8e66fb109.png",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/profiles/81688ce1-47ae-4f4c-85ef-49f8e66fb109#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mrc3id2iw3",
+      "Integrity": "YqmksU9bLC5+0h20NsBpNGzFv1dDADJPPJ0txUQ7zrY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\profiles\\81688ce1-47ae-4f4c-85ef-49f8e66fb109.png"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\f5ddb65d-5db3-46a5-8998-5ff4e896049f.png",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/profiles/f5ddb65d-5db3-46a5-8998-5ff4e896049f#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7qh3m9arsv",
+      "Integrity": "gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\profiles\\f5ddb65d-5db3-46a5-8998-5ff4e896049f.png"
     },
     {
       "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProofFiles\\08ae5ee6-7c2e-4aee-9895-2b8bfc6fcda7.png",
@@ -708,6 +771,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\ProofFiles\\ec053ea6-db91-408c-96d2-1d59c6d6534b.pdf"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\proofs\\7d32fbb3-4a7c-4e5d-8354-fd050d0dbdd6.png",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/proofs/7d32fbb3-4a7c-4e5d-8354-fd050d0dbdd6#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7qh3m9arsv",
+      "Integrity": "gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\proofs\\7d32fbb3-4a7c-4e5d-8354-fd050d0dbdd6.png"
     }
   ],
   "Endpoints": [
@@ -734,7 +818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:45:40 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -771,7 +855,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:45:40 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -816,7 +900,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 07:05:23 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -853,7 +937,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 07:05:23 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -898,7 +982,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 07:01:45 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -943,7 +1027,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 07:01:45 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -980,7 +1064,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:57:57 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1017,7 +1101,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:57:57 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1062,7 +1146,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 20 Aug 2025 12:09:58 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1099,7 +1183,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 20 Aug 2025 12:09:58 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1144,7 +1228,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Aug 2025 05:56:21 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1189,7 +1273,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Aug 2025 05:56:21 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1308,7 +1392,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:51:31 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1353,7 +1437,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:51:31 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1554,7 +1638,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:49:08 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1591,7 +1675,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:49:08 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1718,7 +1802,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:34:42 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1763,7 +1847,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:34:42 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1800,7 +1884,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:09:24 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1837,7 +1921,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:09:24 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1882,7 +1966,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:37:38 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1919,7 +2003,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:37:38 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1938,6 +2022,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-ETFgCYJIu3jh1w55zSzB+ExaFLsGHFXyT5kdMN4fRZQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/a608746e-5c60-4eed-bfe9-258ecf9b0d1f.jpeg",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\a608746e-5c60-4eed-bfe9-258ecf9b0d1f.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7023"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KXuQN8CR50fIPkx0Qc/Db8sEul7a9wwg8AuK8k2yZLg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KXuQN8CR50fIPkx0Qc/Db8sEul7a9wwg8AuK8k2yZLg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ProfileImages/a608746e-5c60-4eed-bfe9-258ecf9b0d1f.zt65nr1oqo.jpeg",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\ProfileImages\\a608746e-5c60-4eed-bfe9-258ecf9b0d1f.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7023"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KXuQN8CR50fIPkx0Qc/Db8sEul7a9wwg8AuK8k2yZLg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zt65nr1oqo"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ProfileImages/a608746e-5c60-4eed-bfe9-258ecf9b0d1f.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KXuQN8CR50fIPkx0Qc/Db8sEul7a9wwg8AuK8k2yZLg="
         }
       ]
     },
@@ -1964,7 +2130,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 07:03:31 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2001,7 +2167,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 07:03:31 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2128,7 +2294,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 11:24:17 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2165,7 +2331,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 11:24:17 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2292,7 +2458,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 11:50:56 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2329,7 +2495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 11:50:56 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2348,6 +2514,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-NWCco7sKMnytezH6W8iyyUECcUx2r005GB5zzVBEmD8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/profiles/81688ce1-47ae-4f4c-85ef-49f8e66fb109.mrc3id2iw3.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\81688ce1-47ae-4f4c-85ef-49f8e66fb109.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1959244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YqmksU9bLC5+0h20NsBpNGzFv1dDADJPPJ0txUQ7zrY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mrc3id2iw3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/profiles/81688ce1-47ae-4f4c-85ef-49f8e66fb109.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YqmksU9bLC5+0h20NsBpNGzFv1dDADJPPJ0txUQ7zrY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/profiles/81688ce1-47ae-4f4c-85ef-49f8e66fb109.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\81688ce1-47ae-4f4c-85ef-49f8e66fb109.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1959244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YqmksU9bLC5+0h20NsBpNGzFv1dDADJPPJ0txUQ7zrY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YqmksU9bLC5+0h20NsBpNGzFv1dDADJPPJ0txUQ7zrY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/profiles/f5ddb65d-5db3-46a5-8998-5ff4e896049f.7qh3m9arsv.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\f5ddb65d-5db3-46a5-8998-5ff4e896049f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1726933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7qh3m9arsv"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/profiles/f5ddb65d-5db3-46a5-8998-5ff4e896049f.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/profiles/f5ddb65d-5db3-46a5-8998-5ff4e896049f.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\f5ddb65d-5db3-46a5-8998-5ff4e896049f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1726933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk="
         }
       ]
     },
@@ -2374,7 +2704,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:09:24 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2419,7 +2749,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:09:24 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2538,7 +2868,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:37:38 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2583,7 +2913,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:37:38 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2702,7 +3032,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:45:40 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2747,7 +3077,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:45:40 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2784,7 +3114,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 20 Aug 2025 09:02:36 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2829,7 +3159,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 20 Aug 2025 09:02:36 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2866,7 +3196,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Aug 2025 05:56:21 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2911,7 +3241,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Aug 2025 05:56:21 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2948,7 +3278,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 11:50:56 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2993,7 +3323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 11:50:56 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3194,7 +3524,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:34:42 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3239,7 +3569,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Aug 2025 06:34:42 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3358,7 +3688,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 20 Aug 2025 12:09:58 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3403,7 +3733,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 20 Aug 2025 12:09:58 GMT"
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3414,6 +3744,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-AaWVvatQy3pqXyW/Cb6GODvUneqj0uYf6+jFHUyf2wY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/proofs/7d32fbb3-4a7c-4e5d-8354-fd050d0dbdd6.7qh3m9arsv.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\proofs\\7d32fbb3-4a7c-4e5d-8354-fd050d0dbdd6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1726933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7qh3m9arsv"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/proofs/7d32fbb3-4a7c-4e5d-8354-fd050d0dbdd6.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/proofs/7d32fbb3-4a7c-4e5d-8354-fd050d0dbdd6.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\proofs\\7d32fbb3-4a7c-4e5d-8354-fd050d0dbdd6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1726933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 06:04:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk="
         }
       ]
     }

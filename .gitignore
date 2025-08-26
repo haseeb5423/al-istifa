@@ -32,4 +32,4 @@ server/Allstifa Backend/.vs/
 # Secrets and local configuration
 appsettings.Development.json
 
-wwwroot/uploads/
+server/Allstifa Backend/Q&A Backend/wwwroot/uploads/
