@@ -1,106 +1,171 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { ToastService } from '@shared/services/toastr.service';
-import { ProfileService } from '@features/profile/services/profile.service';
-import { MASLAKS } from '@core/constants/maslaks.constants';
+import {
+  FormBuilder,
+  FormGroup,
+  FormsModule,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 import { Profile } from '@features/profile/models/profile.model';
+import { ProfileService } from '@features/profile/services/profile.service';
+import { AuthService } from '@features/authentication/services/auth.service';
+import { ToastService } from '@shared/services/toastr.service';
+import { MASLAKS } from '@core/constants/maslaks.constants';
 
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+  styleUrls: ['./profile.component.scss'],
 })
 export class ProfileComponent implements OnInit {
-  profile!:Profile
+  get selectedMaslakName(): string {
+    const maslakId = this.profileData?.maslakId;
+    const found = this.maslaks.find((m: { maslakId: number; name: string }) => m.maslakId === maslakId);
+    return found ? found.name : 'Not selected';
+  }
+  profileData!: Profile;
+  userId: string = '';
   maslaks = MASLAKS;
-
-  private profileSvc = inject(ProfileService)
-  private toastr = inject(ToastService);
-
-
-
   isEditing = false;
-  editableProfile: Profile = { ...this.profile };
-  selectedFile: File | null = null;
+  profileForm!: FormGroup;
+  imagePreview: string | ArrayBuffer | null = null;
+  selectedAvatarFile: File | null = null;
+  selectedProofFile: File | null = null;
 
-  ngOnInit() {
-    this.getProfile('44490265-07B6-4A8E-8838-5E3C3D3F70D2');
-  }
-  getProfile(id: string) {
-    this.profileSvc.getProfile(id).subscribe({
-      next: (res: any) => {
-        this.profile = res
-    this.resetEditableProfile();
+  private profileSvc = inject(ProfileService);
+  private authSvc = inject(AuthService);
+  private toastr = inject(ToastService);
+  private fb = inject(FormBuilder);
+  private cdr = inject(ChangeDetectorRef);
 
-      },
-      error: (res: any) => {
-        console.log(res.error);
-        this.toastr.error(res.error)
+  constructor() {}
+
+  ngOnInit(): void {
+    this.authSvc.UserId$.subscribe((id) => {
+      if (id) {
+        this.userId = id;
+        this.profileSvc.getProfile(this.userId).subscribe({
+          next: (res: any) => {
+            this.profileData = res;
+            this.initForm();
+          },
+          error: (res: any) => {
+            this.toastr.error('Error while fetching Profile', res.error.message);
+          },
+        });
       }
-    })
+    });
   }
 
-  toggleEdit() {
-    if (this.isEditing) {
-      this.resetEditableProfile();
+  initForm() {
+    this.profileForm = this.fb.group({
+      name: [{ value: this.profileData?.name || '', disabled: true }, [Validators.required, Validators.minLength(4)]],
+      email: [{ value: this.profileData?.email || '', disabled: true }, [Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$')]],
+      role: [{ value: this.profileData?.role || '', disabled: true }],
+      bio: [{ value: this.profileData?.bio || '', disabled: true }],
+      maslakId: [{ value: this.profileData?.maslakId || '', disabled: true }],
+      socialMediaLink: [{ value: this.profileData?.socialMediaLink || '', disabled: true }, [Validators.pattern(/^https?:\/\/.+/)]],
+    });
+  }
+
+  onEditing() {
+    this.isEditing = true;
+    this.profileForm.enable();
+  }
+
+  saveChanges() {
+    if (this.profileForm.invalid) {
+      this.toastr.error('Form is invalid', 'Error');
+      return;
     }
-    this.isEditing = !this.isEditing;
+    
+    const formData = this.formDataFormation();
+    this.profileSvc.updateProfile(this.userId, formData).subscribe({
+      next: (res: any) => {
+        // 1. Immediately update the component's master data object with the server response.
+        this.profileData = res;
+
+        // 2. IMPORTANT: Apply the cache-busting timestamp to the updated data.
+        // This creates a unique URL that forces the browser to re-download the image.
+        if (this.profileData.profileImagePath) {
+          this.profileData.profileImagePath = 
+            `${this.profileData.profileImagePath}?t=${new Date().getTime()}`;
+        }
+
+        // 3. Reset the form with the new, cache-busted data. This is more robust than patchValue.
+        this.profileForm.reset(this.profileData);
+
+        // 4. Set the component back to "view mode".
+        this.isEditing = false;
+        this.profileForm.disable(); // Disable controls after resetting them.
+
+        // 5. Clear the temporary properties used for editing.
+        this.selectedAvatarFile = null;
+        this.selectedProofFile = null;
+        this.imagePreview = null;
+        
+        this.toastr.success('Profile Updated Successfully', 'Success');
+        this.cdr.detectChanges(); // Ensure the view updates immediately.
+      },
+      error: (err: any) => {
+        this.toastr.error('Error while updating profile', err.error);
+      },
+    });
   }
 
-  saveProfile() {
-    // Here you would typically call your API service
-    this.profile = { ...this.editableProfile };
+  onCancelEdit(): void {
     this.isEditing = false;
-    // Simulate API call success
-    console.log('Profile updated:', this.profile);
+    this.profileForm.reset(this.profileData);
+    this.profileForm.disable();
+    
+    this.imagePreview = null;
+    this.selectedAvatarFile = null;
+    this.selectedProofFile = null;
   }
 
-  resetEditableProfile() {
-    this.editableProfile = { ...this.profile };
-  }
-
-  onFileSelected(event: any) {
+  onAvatarSelected(event: any) {
     const file = event.target.files[0];
     if (file) {
-      this.selectedFile = file;
-      // Create preview URL
+      this.selectedAvatarFile = file;
       const reader = new FileReader();
-      reader.onload = (e: any) => {
-        this.editableProfile.profileImagePath = e.target.result;
+      reader.onload = () => {
+        this.imagePreview = reader.result;
       };
       reader.readAsDataURL(file);
     }
   }
 
-  getMaslakName(id?: number): string {
-    if (!id) return 'Not specified';
-    const maslak = this.maslaks.find(m => m.maslakId === id);
-    return maslak ? maslak.name : 'Unknown';
-  }
-
-  getRoleColor(role: string): string {
-    switch (role.toLowerCase()) {
-      case 'scholar': return 'role-scholar';
-      case 'student': return 'role-student';
-      case 'admin': return 'role-admin';
-      default: return 'role-user';
+  onProofFileSelected(event: any): void {
+    const file = event.target.files[0];
+    if (file) {
+      this.selectedProofFile = file;
     }
   }
 
-  formatDate(dateStr: string | null | undefined): string {
-  if (!dateStr) return 'N/A';
+  formDataFormation(): FormData {
+    const formData = new FormData();
+    const formValues = this.profileForm.getRawValue();
 
-  const date = new Date(dateStr);
-  if (isNaN(date.getTime())) return 'Invalid date';
+    // Append form values, but only if they are not null/undefined
+    Object.keys(formValues).forEach(key => {
+      const value = formValues[key];
+      if (value !== null && value !== undefined) {
+        formData.append(key, value);
+      }
+    });
 
-  return date.toLocaleDateString(undefined, {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric'
-  });
-}
+    // Use .set() to ensure files overwrite any other value
+    if (this.selectedAvatarFile) {
+      formData.set('profileImage', this.selectedAvatarFile);
+    }
 
+    if (this.selectedProofFile) {
+      formData.set('proofFile', this.selectedProofFile);
+    }
+
+    return formData;
+  }
 }
