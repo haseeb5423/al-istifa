@@ -10,6 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { Router } from '@angular/router';
 import { AuthService } from '@features/authentication/services/auth.service';
+import { LoadingSpinnerService } from '@shared/services/loading-spinner.service';
 import { ToastService } from '@shared/services/toastr.service';
 
 @Component({
@@ -35,7 +36,7 @@ import { ToastService } from '@shared/services/toastr.service';
     profileImagePreview: string | null = null;
     selectedProfileImage: File | null = null;
     
-    constructor(private fb: FormBuilder, private authSvc:AuthService, private toastr : ToastService, private router :Router)
+    constructor( private loadingSpinnerSvc: LoadingSpinnerService,private fb: FormBuilder, private authSvc:AuthService, private toastr : ToastService, private router :Router)
     {
       this.profileForm = this.fb.group({
         
@@ -94,15 +95,17 @@ import { ToastService } from '@shared/services/toastr.service';
     
     onSubmit(): void {
       if (this.profileForm.valid) {
+        this.loadingSpinnerSvc.show();
         const formData = this.formDataFormation();
         console.log('Form Data:', formData);
         this.authSvc.registerStep2(formData).subscribe({
           next:(response) =>{
+            this.loadingSpinnerSvc.hide();
             this.toastr.success('Profile Created Successfully!')
             this.router.navigate(['/login']);
           }, 
           error : (response)=>{
-            console.log('Res:' , response)
+            this.loadingSpinnerSvc.hide();
             this.toastr.error('Error Occured!', response.error)
           }
         })

@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 import { MASLAKS } from '@core/constants/maslaks.constants';
 import { ROLES } from '@core/constants/role.constants';
 import { AuthService } from '@features/authentication/services/auth.service';
+import { LoadingSpinnerService } from '@shared/services/loading-spinner.service';
 import { ToastService } from '@shared/services/toastr.service';
 
 @Component({
@@ -33,7 +34,7 @@ export class Step1Component {
    maslaks = MASLAKS;
    roles = ROLES;
 
-  constructor(private fb: FormBuilder, private router: Router, private authSvc: AuthService, private toastr: ToastService) {
+  constructor( private loadingSpinnerSvc: LoadingSpinnerService,private fb: FormBuilder, private router: Router, private authSvc: AuthService, private toastr: ToastService) {
     this.registerForm = this.fb.group(
       {
         name: ['', [Validators.required, Validators.minLength(2)]],
@@ -81,14 +82,17 @@ export class Step1Component {
   onSubmit() {
     console.log(this.registerForm.value);
     if (this.registerForm.valid) {
+      this.loadingSpinnerSvc.show();
       this.authSvc.registerStep1(this.registerForm.value).subscribe({
         next:(response:any) => {
           this.authSvc.setUserId(response.userId)
+          this.loadingSpinnerSvc.hide();
           this.toastr.success('Registration Step 1 completed successfully!');
           this.router.navigate(['/register/step2']);
         },
         error: (response) => {
           this.toastr.error(response.error);
+          this.loadingSpinnerSvc.hide();
           console.error('Registration Step 1 error:', response);
         }
       })

@@ -7,11 +7,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Router } from '@angular/router';
 import { AuthService } from '@features/authentication/services/auth.service';
+import { LoadingSpinnerService } from '@shared/services/loading-spinner.service';
+import { LoadingSpinnerComponent } from '@shared/components/loading-spinner/loading-spinner.component';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-sign-in',
-  imports: [MatIconModule, MatCheckboxModule, MatFormFieldModule,MatInputModule, ReactiveFormsModule, CommonModule],
+  imports: [MatIconModule, MatCheckboxModule, MatFormFieldModule,MatInputModule, ReactiveFormsModule, CommonModule, LoadingSpinnerComponent],
   templateUrl: './sign-in.component.html',
   styleUrl: './sign-in.component.scss'
 })
@@ -23,7 +25,8 @@ export class SignInComponent {
     private fb: FormBuilder,
     private authSvc: AuthService,
     private toastr :ToastrService,
-    private router: Router
+    private router: Router,
+  public loadingSpinnerSvc: LoadingSpinnerService
   ) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
@@ -35,15 +38,17 @@ export class SignInComponent {
   ngOnInit(): void {}
 
   onSubmit(): void {
+    this.loadingSpinnerSvc.show();
     if (this.loginForm.valid) {
       this.authSvc.login(this.loginForm.value).subscribe({
         next: (response) => {
-          console.log('Login successful', response);
           this.toastr.success('Login successful');
+          this.loadingSpinnerSvc.hide();
           this.router.navigate(['/profile']);
         },
         error: (response) => {
           this.toastr.error('Login failed', response.error );
+          this.loadingSpinnerSvc.hide();
         }
       })
     }

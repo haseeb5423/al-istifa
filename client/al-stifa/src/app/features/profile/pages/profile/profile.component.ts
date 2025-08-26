@@ -12,6 +12,7 @@ import { ProfileService } from '@features/profile/services/profile.service';
 import { AuthService } from '@features/authentication/services/auth.service';
 import { ToastService } from '@shared/services/toastr.service';
 import { MASLAKS } from '@core/constants/maslaks.constants';
+import { LoadingSpinnerService } from '@shared/services/loading-spinner.service';
 
 @Component({
   selector: 'app-profile',
@@ -40,10 +41,11 @@ export class ProfileComponent implements OnInit {
   private toastr = inject(ToastService);
   private fb = inject(FormBuilder);
   private cdr = inject(ChangeDetectorRef);
-
+  private loadingSpinnerSvc = inject(LoadingSpinnerService);
   constructor() {}
 
   ngOnInit(): void {
+    this.loadingSpinnerSvc.show();
     this.authSvc.UserId$.subscribe((id) => {
       if (id) {
         this.userId = id;
@@ -51,9 +53,11 @@ export class ProfileComponent implements OnInit {
           next: (res: any) => {
             this.profileData = res;
             this.initForm();
+            this.loadingSpinnerSvc.hide();
           },
           error: (res: any) => {
             this.toastr.error('Error while fetching Profile', res.error.message);
+            this.loadingSpinnerSvc.hide();
           },
         });
       }
@@ -83,6 +87,7 @@ export class ProfileComponent implements OnInit {
     }
     
     const formData = this.formDataFormation();
+    this.loadingSpinnerSvc.show();
     this.profileSvc.updateProfile(this.userId, formData).subscribe({
       next: (res: any) => {
         this.profileData = res;
@@ -99,6 +104,7 @@ export class ProfileComponent implements OnInit {
         this.selectedAvatarFile = null;
         this.selectedProofFile = null;
         this.imagePreview = null;
+        this.loadingSpinnerSvc.hide();
         
         this.toastr.success('Profile Updated Successfully', 'Success');
         this.cdr.detectChanges();

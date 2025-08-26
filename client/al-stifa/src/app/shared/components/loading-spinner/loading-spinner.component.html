@@ -1,0 +1,56 @@
+<!-- loading-spinner.component.html -->
+<div class="loading-container" 
+     [class.overlay]="overlay"
+     [class.light-theme]="theme === 'light'"
+     [class.dark-theme]="theme === 'dark'">
+  
+  <div class="spinner-wrapper" [class]="size">
+    <!-- Islamic-inspired geometric spinner -->
+    <div class="islamic-spinner">
+      <!-- Outer rotating ring -->
+      <div class="ring outer-ring">
+        <div class="ring-segment segment-1"></div>
+        <div class="ring-segment segment-2"></div>
+        <div class="ring-segment segment-3"></div>
+        <div class="ring-segment segment-4"></div>
+        <div class="ring-segment segment-5"></div>
+        <div class="ring-segment segment-6"></div>
+        <div class="ring-segment segment-7"></div>
+        <div class="ring-segment segment-8"></div>
+      </div>
+
+      <!-- Middle rotating ring -->
+      <div class="ring middle-ring">
+        <div class="ring-dot dot-1"></div>
+        <div class="ring-dot dot-2"></div>
+        <div class="ring-dot dot-3"></div>
+        <div class="ring-dot dot-4"></div>
+        <div class="ring-dot dot-5"></div>
+        <div class="ring-dot dot-6"></div>
+      </div>
+
+      <!-- Inner pulsing center -->
+      <div class="center-ornament">
+        <div class="ornament-symbol">✦</div>
+      </div>
+
+      <!-- Decorative corners -->
+      <!-- <div class="corner-ornaments">
+        <div class="corner-ornament corner-1">🕌</div>
+        <div class="corner-ornament corner-2">🕌</div>
+        <div class="corner-ornament corner-3">🕌</div>
+        <div class="corner-ornament corner-4">🕌</div>
+      </div> -->
+    </div>
+
+    <!-- Loading message -->
+    <!-- <div class="loading-message" *ngIf="showMessage">
+      <p class="message-text">{{ message }}</p>
+      <div class="message-dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div> -->
+  </div>
+</div>

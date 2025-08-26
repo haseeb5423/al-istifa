@@ -2,6 +2,7 @@
   <div class="background-image"></div>
   
   <div class="auth-card">
+    <app-loading-spinner *ngIf="loadingSpinnerSvc.loadingSpinner$ | async"></app-loading-spinner>
     <div class="logo-section">
       <div class="logo">
         <img class="logo-img" src="assets/images/logo.png" alt="">

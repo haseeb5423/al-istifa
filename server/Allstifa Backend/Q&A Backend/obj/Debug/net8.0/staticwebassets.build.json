@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RkYWQEf4h2KzsJMrdlBR4dbZib+d8KgMRN1dxfwsv/8=",
+  "Hash": "io4UrE5rnWQvdF9KlpzwMx1pm/3+40vlps4v9KlNH/A=",
   "Source": "Q&A Backend",
   "BasePath": "_content/Q&A Backend",
   "Mode": "Default",
@@ -456,6 +456,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\ProfileImages\\edca723a-2649-4a9c-a3d3-940c601550ac.jpeg"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\601fbd44-89c6-48bc-b850-04d2bf5af141.jpeg",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/profiles/601fbd44-89c6-48bc-b850-04d2bf5af141#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zt65nr1oqo",
+      "Integrity": "KXuQN8CR50fIPkx0Qc/Db8sEul7a9wwg8AuK8k2yZLg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\profiles\\601fbd44-89c6-48bc-b850-04d2bf5af141.jpeg"
     },
     {
       "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\81688ce1-47ae-4f4c-85ef-49f8e66fb109.png",
@@ -2514,6 +2535,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-NWCco7sKMnytezH6W8iyyUECcUx2r005GB5zzVBEmD8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/profiles/601fbd44-89c6-48bc-b850-04d2bf5af141.jpeg",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\601fbd44-89c6-48bc-b850-04d2bf5af141.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7023"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KXuQN8CR50fIPkx0Qc/Db8sEul7a9wwg8AuK8k2yZLg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 07:05:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KXuQN8CR50fIPkx0Qc/Db8sEul7a9wwg8AuK8k2yZLg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/profiles/601fbd44-89c6-48bc-b850-04d2bf5af141.zt65nr1oqo.jpeg",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\601fbd44-89c6-48bc-b850-04d2bf5af141.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7023"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KXuQN8CR50fIPkx0Qc/Db8sEul7a9wwg8AuK8k2yZLg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 07:05:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zt65nr1oqo"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/profiles/601fbd44-89c6-48bc-b850-04d2bf5af141.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KXuQN8CR50fIPkx0Qc/Db8sEul7a9wwg8AuK8k2yZLg="
         }
       ]
     },
