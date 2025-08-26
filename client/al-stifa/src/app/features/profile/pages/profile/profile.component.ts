@@ -85,30 +85,23 @@ export class ProfileComponent implements OnInit {
     const formData = this.formDataFormation();
     this.profileSvc.updateProfile(this.userId, formData).subscribe({
       next: (res: any) => {
-        // 1. Immediately update the component's master data object with the server response.
         this.profileData = res;
 
-        // 2. IMPORTANT: Apply the cache-busting timestamp to the updated data.
-        // This creates a unique URL that forces the browser to re-download the image.
         if (this.profileData.profileImagePath) {
           this.profileData.profileImagePath = 
             `${this.profileData.profileImagePath}?t=${new Date().getTime()}`;
         }
 
-        // 3. Reset the form with the new, cache-busted data. This is more robust than patchValue.
         this.profileForm.reset(this.profileData);
 
-        // 4. Set the component back to "view mode".
         this.isEditing = false;
-        this.profileForm.disable(); // Disable controls after resetting them.
-
-        // 5. Clear the temporary properties used for editing.
+        this.profileForm.disable(); 
         this.selectedAvatarFile = null;
         this.selectedProofFile = null;
         this.imagePreview = null;
         
         this.toastr.success('Profile Updated Successfully', 'Success');
-        this.cdr.detectChanges(); // Ensure the view updates immediately.
+        this.cdr.detectChanges();
       },
       error: (err: any) => {
         this.toastr.error('Error while updating profile', err.error);

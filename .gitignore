@@ -31,3 +31,5 @@ server/Allstifa Backend/.vs/
 
 # Secrets and local configuration
 appsettings.Development.json
+
+wwwroot/uploads/
