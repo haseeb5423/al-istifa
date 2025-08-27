@@ -22,7 +22,7 @@ namespace Q_A_Backend.Controllers
             _fileService = fileService;
         }
         [HttpGet("{id}")]
-        // [Authorize]
+        [Authorize]
         public async Task<IActionResult> GetProfileByIdAsync(Guid id)
         {
             try
@@ -41,7 +41,7 @@ namespace Q_A_Backend.Controllers
         }
 
         [HttpPatch("{id}")]
-        // [Authorize]
+        [Authorize]
     public async Task<IActionResult> UpdateProfileAsync(Guid id, [FromForm] ProfileUpdateDto profileUpdateDto, [FromForm] IFormFile? profileImage, [FromForm] IFormFile? proofFile)
         {
             if (profileUpdateDto == null || id == Guid.Empty)

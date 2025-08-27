@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { LayoutComponent } from './layout/layout/layout.component';
 import { HomeComponent } from './features/home/home.component';
 import { NotFoundComponent } from './layout/not-found/not-found.component';
+import { canActivateGuard } from '@core/guards/can-activate.guard';
 
 export const routes: Routes = [
     {
@@ -14,6 +15,7 @@ export const routes: Routes = [
             }, 
             {
                 path: 'profile',
+                canActivate: [canActivateGuard],
                 loadComponent: () => import('./features/profile/pages/profile/profile.component').then(m => m.ProfileComponent)
             }
         ]
@@ -32,3 +34,5 @@ export const routes: Routes = [
     },
     { path: '**', component: NotFoundComponent }
 ];
+
+export const routingProviders = [canActivateGuard];

@@ -4,9 +4,12 @@
     <div class="logo">
       <img src="assets/images/logo.png" alt="Logo" />
     </div>
-    <div class="nav-actions">
+    <div *ngIf="!authCheck" class="nav-actions">
       <button mat-button (click)="onLogin()">Login</button>
       <button mat-stroked-button (click)="onRegister()">Register</button>
+    </div>
+    <div *ngIf="authCheck" class="nav-actions">
+      <button mat-stroked-button (click)="onLogout()">Logout</button>
     </div>
   </div>
 </nav>

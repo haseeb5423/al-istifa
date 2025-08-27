@@ -13,6 +13,7 @@ import { AuthService } from '@features/authentication/services/auth.service';
 import { ToastService } from '@shared/services/toastr.service';
 import { MASLAKS } from '@core/constants/maslaks.constants';
 import { LoadingSpinnerService } from '@shared/services/loading-spinner.service';
+import { LoadingSpinnerComponent } from "@shared/components/loading-spinner/loading-spinner.component";
 
 @Component({
   selector: 'app-profile',
@@ -45,15 +46,15 @@ export class ProfileComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.loadingSpinnerSvc.show();
     this.authSvc.UserId$.subscribe((id) => {
       if (id) {
         this.userId = id;
+        this.loadingSpinnerSvc.show();
         this.profileSvc.getProfile(this.userId).subscribe({
           next: (res: any) => {
             this.profileData = res;
-            this.initForm();
             this.loadingSpinnerSvc.hide();
+            this.initForm();
           },
           error: (res: any) => {
             this.toastr.error('Error while fetching Profile', res.error.message);
