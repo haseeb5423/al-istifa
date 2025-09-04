@@ -40,46 +40,56 @@ namespace Q_A_Backend.Controllers
             }
         }
 
-        [HttpPatch("{id}")]
-        [Authorize]
-    public async Task<IActionResult> UpdateProfileAsync(Guid id, [FromForm] ProfileUpdateDto profileUpdateDto, [FromForm] IFormFile? profileImage, [FromForm] IFormFile? proofFile)
+       [HttpPatch("{id}")]
+[Consumes("multipart/form-data")]
+[Authorize]
+public async Task<IActionResult> UpdateProfileAsync(
+    Guid id,
+    [FromForm] ProfileUpdateDto profileUpdateDto) // Only one [FromForm] parameter
+{
+    if (profileUpdateDto == null || id == Guid.Empty)
+    {
+        return BadRequest("Invalid profile data.");
+    }
+
+    try
+    {
+        // Handle profile image upload from the DTO property
+        if (profileUpdateDto.ProfileImage != null)
         {
-            if (profileUpdateDto == null || id == Guid.Empty)
-            {
-                return BadRequest("Invalid profile data.");
-            }
-
-            try
-            {
-                // If image files were uploaded, save them and populate the DTO with the returned URLs
-                if (profileImage != null)
-                {
-                    var imageUrl = await _fileService.SaveFileAsync(profileImage, "profiles");
-                    profileUpdateDto.ProfileImagePath = imageUrl;
-                }
-
-                if (proofFile != null)
-                {
-                    var proofUrl = await _fileService.SaveFileAsync(proofFile, "proofs");
-                    profileUpdateDto.ProofFilePath = proofUrl;
-                }
-
-                var updatedUser = await _profileRepository.UpdateProfileAsync(id, profileUpdateDto);
-                if (updatedUser == null)
-                {
-                     return StatusCode(500, "Internal server error while updating profile.");
-                }
-                else
-                {
-                return new OkObjectResult(updatedUser);
-                }
-                   
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Internal server error while updating profile: {ex.Message}");
-            }
+            var imageUrl = await _fileService.SaveFileAsync(profileUpdateDto.ProfileImage, "profiles");
+            profileUpdateDto.ProfileImagePath = imageUrl;
         }
+
+        // Handle proof file upload from the DTO property
+        if (profileUpdateDto.ProofFile != null)
+        {
+            var proofUrl = await _fileService.SaveFileAsync(profileUpdateDto.ProofFile, "proofs");
+            profileUpdateDto.ProofFilePath = proofUrl;
+        }
+
+        var updatedUser = await _profileRepository.UpdateProfileAsync(id, profileUpdateDto);
+
+        if (updatedUser == null)
+        {
+            return Problem(
+                detail: "Profile could not be updated. Repository returned null.",
+                statusCode: 500,
+                title: "Internal server error"
+            );
+        }
+
+        return Ok(updatedUser);
+    }
+    catch (Exception ex)
+    {
+        return Problem(
+            detail: ex.Message,
+            statusCode: 500,
+            title: "Internal server error while updating profile"
+        );
+    }
+}
 
 
     }

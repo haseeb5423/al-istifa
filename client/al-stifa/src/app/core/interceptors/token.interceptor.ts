@@ -19,7 +19,6 @@ export const tokenInterceptor: HttpInterceptorFn = (req, next) => {
    if (!authSvc.getToken() || authSvc.isTokenExpired()) {
     toastr.warning('Session expired. Please log in again.');
     router.navigate(['/auth/login']);
-    return next(req);
   }
    if (authToken) {
     const clonedReq = req.clone({

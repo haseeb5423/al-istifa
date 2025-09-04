@@ -31,7 +31,7 @@ namespace Q_A_Backend.Services.Implementations
                 issuer: _config["Jwt:Issuer"],
                 audience: _config["Jwt:Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(30),
+                expires: DateTime.Now.AddMinutes(1440),
                 signingCredentials: creds
             );
 
