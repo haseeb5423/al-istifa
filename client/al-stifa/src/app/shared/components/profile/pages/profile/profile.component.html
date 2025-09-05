@@ -34,7 +34,7 @@
           type="button"
           [class.editingMode]="isEditing"
           title="Edit Profile"
-          (click)="isEditing ? saveChanges() : onEditing()"
+          (click)="isEditing ? onSaveClicked() : onEditing()"
         >
           {{ isEditing ? 'Save Changes' : 'Edit Profile' }}
         </button>

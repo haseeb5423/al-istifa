@@ -414,6 +414,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\profiles\81688ce1-47ae-4f4c-85ef-49f8e66fb109.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\profiles\c8df7d5b-2091-4b6d-956b-45104326f28b.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Q&amp;A Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Q&amp;A Backend</BasePath>
+      <RelativePath>uploads/profiles/c8df7d5b-2091-4b6d-956b-45104326f28b.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7qh3m9arsv</Fingerprint>
+      <Integrity>gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\profiles\c8df7d5b-2091-4b6d-956b-45104326f28b.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\profiles\f5ddb65d-5db3-46a5-8998-5ff4e896049f.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Q&amp;A Backend</SourceId>

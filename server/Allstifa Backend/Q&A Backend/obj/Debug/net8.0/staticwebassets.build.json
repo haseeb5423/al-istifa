@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "io4UrE5rnWQvdF9KlpzwMx1pm/3+40vlps4v9KlNH/A=",
+  "Hash": "0sLvw81RVRInfr81tQjMyE3a8GVbC3vo2hcl2h9xwhI=",
   "Source": "Q&A Backend",
   "BasePath": "_content/Q&A Backend",
   "Mode": "Default",
@@ -498,6 +498,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\profiles\\81688ce1-47ae-4f4c-85ef-49f8e66fb109.png"
+    },
+    {
+      "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\c8df7d5b-2091-4b6d-956b-45104326f28b.png",
+      "SourceId": "Q&A Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\",
+      "BasePath": "_content/Q&A Backend",
+      "RelativePath": "uploads/profiles/c8df7d5b-2091-4b6d-956b-45104326f28b#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7qh3m9arsv",
+      "Integrity": "gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\profiles\\c8df7d5b-2091-4b6d-956b-45104326f28b.png"
     },
     {
       "Identity": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\f5ddb65d-5db3-46a5-8998-5ff4e896049f.png",
@@ -2699,6 +2720,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-YqmksU9bLC5+0h20NsBpNGzFv1dDADJPPJ0txUQ7zrY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/profiles/c8df7d5b-2091-4b6d-956b-45104326f28b.7qh3m9arsv.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\c8df7d5b-2091-4b6d-956b-45104326f28b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1726933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 04 Sep 2025 05:50:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7qh3m9arsv"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/profiles/c8df7d5b-2091-4b6d-956b-45104326f28b.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/profiles/c8df7d5b-2091-4b6d-956b-45104326f28b.png",
+      "AssetFile": "D:\\MY WORK\\Allstifa\\server\\Allstifa Backend\\Q&A Backend\\wwwroot\\uploads\\profiles\\c8df7d5b-2091-4b6d-956b-45104326f28b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1726933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 04 Sep 2025 05:50:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gYnahvDFp6i20z+ipCVTN4Ym2IFyrrZm5/Lq6RvXQqk="
         }
       ]
     },

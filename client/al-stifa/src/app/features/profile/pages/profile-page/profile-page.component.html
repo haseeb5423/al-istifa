@@ -1,0 +1,12 @@
+<app-profile
+  [profileData]="profileData"
+  [profileForm]="profileForm"
+  [maslaks]="maslaks"
+  [imagePreview]="imagePreview"
+  [proofFile]="selectedProofFile"
+  [isEditing]="isEditing"
+  (editClicked)="handleEditClick($event)"
+  (cancelEditClicked)="handleCancelEdit($event)"
+  (avtarSelected)="handleAvatarSelection($event)"
+  (saveClicked)="onSaveChanges()"
+></app-profile>

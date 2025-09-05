@@ -1,33 +1,21 @@
-import { Component, inject, OnInit, ChangeDetectorRef } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import {
-  FormBuilder,
-  FormGroup,
-  FormsModule,
-  ReactiveFormsModule,
-  Validators,
-} from '@angular/forms';
-import { Profile } from '@features/profile/models/profile.model';
-import { ProfileService } from '@features/profile/services/profile.service';
-import { AuthService } from '@features/authentication/services/auth.service';
-import { ToastService } from '@shared/services/toastr.service';
+import { ChangeDetectorRef, Component, inject } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MASLAKS } from '@core/constants/maslaks.constants';
+import { AuthService } from '@features/authentication/services/auth.service';
+import { Profile } from '@shared/components/profile/models/profile.model';
+import { ProfileComponent } from "@shared/components/profile/pages/profile/profile.component";
+import { ProfileService } from '@shared/components/profile/services/profile.service';
 import { LoadingSpinnerService } from '@shared/services/loading-spinner.service';
-import { LoadingSpinnerComponent } from "@shared/components/loading-spinner/loading-spinner.component";
+import { ToastService } from '@shared/services/toastr.service';
 
 @Component({
-  selector: 'app-profile',
-  standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule],
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss'],
+  selector: 'app-profile-page',
+  imports: [ProfileComponent],
+  templateUrl: './profile-page.component.html',
+  styleUrl: './profile-page.component.scss'
 })
-export class ProfileComponent implements OnInit {
-  get selectedMaslakName(): string {
-    const maslakId = this.profileData?.maslakId;
-    const found = this.maslaks.find((m: { maslakId: number; name: string }) => m.maslakId === maslakId);
-    return found ? found.name : 'Not selected';
-  }
+export class ProfilePageComponent {
+
   profileData!: Profile;
   userId: string = '';
   maslaks = MASLAKS;
@@ -37,7 +25,8 @@ export class ProfileComponent implements OnInit {
   selectedAvatarFile: File | null = null;
   selectedProofFile: File | null = null;
 
-  private profileSvc = inject(ProfileService);
+
+ private profileSvc = inject(ProfileService);
   private authSvc = inject(AuthService);
   private toastr = inject(ToastService);
   private fb = inject(FormBuilder);
@@ -76,11 +65,9 @@ export class ProfileComponent implements OnInit {
     });
   }
 
-  onEditing() {
-    this.isEditing = true;
-    this.profileForm.enable();
-  }
-
+ onSaveChanges() {
+   this.saveChanges();
+ }
   saveChanges() {
     if (this.profileForm.invalid) {
       this.toastr.error('Form is invalid', 'Error');
@@ -109,40 +96,13 @@ export class ProfileComponent implements OnInit {
         
         this.toastr.success('Profile Updated Successfully', 'Success');
         this.cdr.detectChanges();
+        this.isEditing = false;
+        
       },
       error: (err: any) => {
         this.toastr.error('Error while updating profile', err.error);
       },
     });
-  }
-
-  onCancelEdit(): void {
-    this.isEditing = false;
-    this.profileForm.reset(this.profileData);
-    this.profileForm.disable();
-    
-    this.imagePreview = null;
-    this.selectedAvatarFile = null;
-    this.selectedProofFile = null;
-  }
-
-  onAvatarSelected(event: any) {
-    const file = event.target.files[0];
-    if (file) {
-      this.selectedAvatarFile = file;
-      const reader = new FileReader();
-      reader.onload = () => {
-        this.imagePreview = reader.result;
-      };
-      reader.readAsDataURL(file);
-    }
-  }
-
-  onProofFileSelected(event: any): void {
-    const file = event.target.files[0];
-    if (file) {
-      this.selectedProofFile = file;
-    }
   }
 
   formDataFormation(): FormData {
@@ -168,4 +128,26 @@ export class ProfileComponent implements OnInit {
 
     return formData;
   }
+
+  handleEditClick(event: boolean) {
+    this.isEditing = event;
+    this.profileForm.enable();
+  }
+  handleCancelEdit(event: boolean) {
+    this.isEditing = event;
+    this.profileForm.reset(this.profileData);
+    this.profileForm.disable();
+    this.imagePreview = null;
+    this.selectedAvatarFile = null;
+    this.selectedProofFile = null;
+  }
+  handleAvatarSelection(file: any) {
+    this.selectedAvatarFile = file;
+    const reader = new FileReader();
+    reader.onload = () => {
+      this.imagePreview = reader.result;
+    };
+    reader.readAsDataURL(file);
+  } 
+
 }
